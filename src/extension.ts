@@ -8,8 +8,9 @@ export function activate(context: vscode.ExtensionContext) {
   const unifyFileCommand = vscode.commands.registerTextEditorCommand('vscode-unify.formatFile',
     (textEditor, textEditorEdit) => {
       let doc = textEditor.document;
+      const pythonPath = vscode.workspace.getConfiguration('python').pythonPath;
       const wrapper = path.join(__dirname, '../src/unify_wrapper/unify_wrapper.py');
-      const command = `python3 ${wrapper}`;
+      const command = `${pythonPath} ${wrapper}`;
       var env = process.env;
       env["PREFERRED_QUOTE"] = String(vscode.workspace.getConfiguration('unify').get('preferredQuote'));
       const opts = { env: env, input: doc.getText() };
