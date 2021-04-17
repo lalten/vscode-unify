@@ -1,6 +1,8 @@
-# vscode-unify README
+# vscode-unify
 
-This is the README for your extension "vscode-unify". After writing up a brief description, we recommend including the following sections.
+[![Actions status](https://github.com/lalten/vscode-unify/actions/workflows/Build%20and%20Test/badge.svg)](https://github.com/lalten/vscode-unify/actions)
+
+Unify Python quotes with this VS Code extension.
 
 ## Features
 
