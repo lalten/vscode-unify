@@ -13,6 +13,7 @@ export function activate(context: vscode.ExtensionContext) {
       const command = `${pythonPath} ${wrapper}`;
       var env = process.env;
       env["PREFERRED_QUOTE"] = String(vscode.workspace.getConfiguration('unify', doc).get('preferredQuote'));
+      console.log(env); // TODO: remove
       const opts = { env: env, input: doc.getText() };
       try {
         const formattedText = child_process.execSync(command, opts).toString();
