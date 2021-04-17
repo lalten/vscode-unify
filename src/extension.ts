@@ -8,7 +8,7 @@ export function activate(context: vscode.ExtensionContext) {
   const unifyFileCommand = vscode.commands.registerTextEditorCommand('vscode-unify.formatFile',
     (textEditor, textEditorEdit) => {
       let doc = textEditor.document;
-      const pythonPath = vscode.workspace.getConfiguration('python').pythonPath;
+      const pythonPath = vscode.workspace.getConfiguration('python').pythonPath || "python3";
       const wrapper = path.join(__dirname, '../src/unify_wrapper/unify_wrapper.py');
       const command = `${pythonPath} ${wrapper}`;
       var env = process.env;
