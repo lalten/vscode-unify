@@ -8,7 +8,9 @@ export function activate(context: vscode.ExtensionContext) {
   const unifyFileCommand = vscode.commands.registerTextEditorCommand('vscode-unify.formatFile',
     (textEditor, textEditorEdit) => {
       let doc = textEditor.document;
-      const pythonPath = vscode.workspace.getConfiguration('python').pythonPath || "python";
+      const pythonPath = vscode.workspace.getConfiguration('python').pythonPath
+        || process.env.pythonLocation?.concat("python")  // GH macOS CI seems to need this
+        || "python"; // fall back to PATH lookup
       const wrapper = path.join(__dirname, '../src/unify_wrapper/unify_wrapper.py');
       const command = `${pythonPath} ${wrapper}`;
       var env = process.env;
