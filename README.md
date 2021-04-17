@@ -2,36 +2,32 @@
 
 [![Actions status](https://github.com/lalten/vscode-unify/actions/workflows/gh-actions.yml/badge.svg)](https://github.com/lalten/vscode-unify/actions)
 
-Unify Python quotes with this VS Code extension.
+A VS Code Extension to modify a file's Python strings to use the same quote where possible. Uses https://github.com/myint/unify under the hood.
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+Open the file that you want to format and execute the "**Unify Quotes**" command from the [Command Palette](https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette) (`Ctrl`+`Shift`+`P`).
 
-For example if there is an image subfolder under your extension project workspace:
-
-\!\[feature X\]\(images/feature-x.png\)
-
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+You could also set up your own [keybinding](https://code.visualstudio.com/docs/getstarted/keybindings) or even execute the Unify Quotes command together with other formatters (e.g. `python.sortImports`, `editor.action.formatDocument`) through [multi-command](https://marketplace.visualstudio.com/items?itemName=ryuta46.multi-command).
 
 ## Requirements
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+You need to have `unify` installed for the currently selected Python interpreter:
+```sh
+pip install unify
+```
 
 ## Extension Settings
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
 This extension contributes the following settings:
 
-* `myExtension.enable`: enable/disable this extension
-* `myExtension.thing`: set to `blah` to do something
+* `unify.preferredQuote`: quote to prefer (`'`(default), or `"`)
 
 ## Known Issues
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+If `unify` is not installed and importable by the Python interpreter, the extension will fail.
+
+Feel free to report bugs and send pull requests at https://github.com/lalten/vscode-unify.
 
 ## Release Notes
 
