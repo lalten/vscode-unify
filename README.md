@@ -1,6 +1,6 @@
 # vscode-unify
 
-[![Actions status](https://github.com/lalten/vscode-unify/actions/workflows/Build%20and%20Test/badge.svg)](https://github.com/lalten/vscode-unify/actions)
+[![Actions status](https://github.com/lalten/vscode-unify/actions/workflows/gh-actions.yml/badge.svg)](https://github.com/lalten/vscode-unify/actions)
 
 Unify Python quotes with this VS Code extension.
 
