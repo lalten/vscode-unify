@@ -9,7 +9,7 @@
     "url": "https://github.com/lalten/vscode-unify.git"
   },
   "license": "MIT",
-  "icon": "images/unify.png",
+  "icon": "images/icon.png",
   "engines": {
     "vscode": "^1.55.0"
   },
