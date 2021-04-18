@@ -31,6 +31,6 @@ Feel free to report bugs and send pull requests at https://github.com/lalten/vsc
 
 ## Release Notes
 
-### 0.0.1
+### 0.1.0
 
 Initial release.

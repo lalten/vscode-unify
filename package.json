@@ -2,7 +2,7 @@
   "name": "vscode-unify",
   "displayName": "Unify Quotes",
   "description": "Modifies strings to all use the same quote where possible.",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "publisher": "lalten",
   "engines": {
     "vscode": "^1.55.0"
