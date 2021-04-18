@@ -2,8 +2,14 @@
   "name": "vscode-unify",
   "displayName": "Unify Quotes",
   "description": "Modifies strings to all use the same quote where possible.",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "publisher": "lalten",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lalten/vscode-unify.git"
+  },
+  "license": "MIT",
+  "icon": "images/unify.png",
   "engines": {
     "vscode": "^1.55.0"
   },
