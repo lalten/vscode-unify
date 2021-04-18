@@ -37,6 +37,10 @@ Feel free to report bugs and send pull requests at https://github.com/lalten/vsc
 
 ## Release Notes
 
+### 0.1.3
+
+Fix unfiy_wrapper path inclusion.
+
 ### 0.1.2
 
 Add images.
