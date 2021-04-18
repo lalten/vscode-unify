@@ -1,6 +1,6 @@
 # vscode-unify
 
-[![CI status](https://github.com/lalten/vscode-unify/actions/workflows/ci.yml/badge.svg)](https://github.com/lalten/vscode-unify/actions)
+[![CI status](https://raster.shields.io/github/workflow/status/lalten/vscode-unify/Build,%20Test%20and%20Deploy)](https://github.com/lalten/vscode-unify/actions)
 
 A VS Code Extension to modify a file's Python strings to use the same quote where possible. Uses https://github.com/myint/unify under the hood.
 
