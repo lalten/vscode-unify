@@ -11,13 +11,18 @@ export function activate(context: vscode.ExtensionContext) {
       const pythonPath = vscode.workspace.getConfiguration('python').pythonPath
         || process.env.pythonLocation?.concat("/python")  // GH macOS CI seems to need this
         || "python"; // fall back to PATH lookup
-      const wrapper = path.join(__dirname, '../src/unify_wrapper/unify_wrapper.py');
-      const command = `${pythonPath} ${wrapper}`;
+      const wrapper = path.join(__dirname, '../unify_wrapper/unify_wrapper.py');
+      const args = [wrapper];
       var env = process.env;
       env["PREFERRED_QUOTE"] = String(vscode.workspace.getConfiguration('unify', doc).get('preferredQuote'));
-      const opts = { env: env, input: doc.getText() };
+      const opts = {
+        env: env,
+        input: doc.getText(),
+        maxBuffer: 100 * 1024 * 1024,
+        windowsHide: true,
+      };
       try {
-        const formattedText = child_process.execSync(command, opts).toString();
+        const formattedText = child_process.execFileSync(pythonPath, args, opts).toString();
         textEditorEdit.replace(
           new vscode.Range(new vscode.Position(0, 0), doc.lineAt(doc.lineCount - 1).range.end),
           formattedText);
