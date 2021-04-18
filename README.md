@@ -1,8 +1,8 @@
 # vscode-unify
 
-[![CI status](https://raster.shields.io/github/workflow/status/lalten/vscode-unify/Build,%20Test%20and%20Deploy)](https://github.com/lalten/vscode-unify/actions) ![Visual Studio Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/lalten.vscode-unify)
+[![CI status](https://raster.shields.io/github/workflow/status/lalten/vscode-unify/Build,%20Test%20and%20Deploy) ![Visual Studio Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/lalten.vscode-unify)](https://github.com/lalten/vscode-unify/actions)
 
-<img src="images/icon.png" height=200>
+<img src="icon.png" height=200>
 
 https://marketplace.visualstudio.com/items?itemName=lalten.vscode-unify
 
@@ -37,14 +37,14 @@ Feel free to report bugs and send pull requests at https://github.com/lalten/vsc
 
 ## Release Notes
 
-### 0.1.3
+### 0.1.4, 0.1.5
+Fix icon.
 
+### 0.1.3
 Fix unfiy_wrapper path inclusion.
 
 ### 0.1.2
-
 Add images.
 
 ### 0.1.1
-
 Initial release.
