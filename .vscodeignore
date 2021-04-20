@@ -5,7 +5,6 @@ src/**
 .gitignore
 .yarnrc
 .mypy_cache/**
-vsc-extension-quickstart.md
 **/tsconfig.json
 **/.eslintrc.json
 **/*.map
