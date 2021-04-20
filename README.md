@@ -1,6 +1,6 @@
 # vscode-unify
 
-[![CI status](https://img.shields.io/github/workflow/status/lalten/vscode-unify/Build,%20Test%20and%20Deploy) ![Visual Studio Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/lalten.vscode-unify)](https://github.com/lalten/vscode-unify/actions)
+[![CI status](https://img.shields.io/github/workflow/status/lalten/vscode-unify/Build,%20Test%20and%20Deploy)](https://github.com/lalten/vscode-unify/actions) [![Visual Studio Marketplace Version](https://vsmarketplacebadge.apphb.com/version/lalten.vscode-unify.svg)](https://marketplace.visualstudio.com/items?itemName=lalten.vscode-unify)
 
 <img src="icon.png" height=200>
 
@@ -27,7 +27,7 @@ pip install unify
 
 This extension contributes the following settings:
 
-* `unify.path`: path to `unify` execute (default is just `unify`)
+* `unify.path`: path to `unify` executeable (default is just `unify`)
 * `unify.preferredQuote`: quote to prefer: `'`(default), or `"`
 
 ## Known Issues
