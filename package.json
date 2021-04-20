@@ -2,7 +2,7 @@
   "name": "vscode-unify",
   "displayName": "Unify Quotes",
   "description": "Modifies strings to all use the same quote where possible.",
-  "version": "0.1.5",
+  "version": "0.2.0",
   "publisher": "lalten",
   "repository": {
     "type": "git",
@@ -43,6 +43,11 @@
             "Prefer single quotes"
           ],
           "description": "Specifies preferred quote"
+        },
+        "unify.path": {
+          "type": "string",
+          "default": "unify",
+          "description": "Path to unify executable (or just `unify` to find it in `$PATH`)"
         }
       }
     }
@@ -64,13 +69,20 @@
     "@typescript-eslint/eslint-plugin": "^4.22.0",
     "@typescript-eslint/parser": "^4.22.0",
     "eslint": "^7.24.0",
+    "eslint-config-prettier": "^8.2.0",
     "eslint-import-resolver-typescript": "^2.4.0",
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-mocha": "^8.1.0",
+    "eslint-plugin-prettier": "^3.4.0",
     "glob": "^7.1.6",
     "mocha": "^8.2.1",
+    "prettier": "^2.2.1",
     "typescript": "^4.1.3",
     "vsce": "^1.87.1",
     "vscode-test": "^1.5.0"
+  },
+  "dependencies": {
+    "del": "^6.0.0",
+    "tempy": "^1.0.1"
   }
 }
