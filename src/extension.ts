@@ -27,7 +27,7 @@ export function activate(context: vscode.ExtensionContext): void {
         console.error(error);
         vscode.window.showErrorMessage(error.message);
       }
-      del(tempPath);
+      del(tempPath, { force: true });
     }
   );
 
